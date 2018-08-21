@@ -1,0 +1,24 @@
+{
+  "name": "pokehunter_api",
+  "version": "1.0.0",
+  "description": "Node JS API for Pokehunter app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosueCuberoSanchez/pokehunter_api.git"
+  },
+  "author": "Josué Cubero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosueCuberoSanchez/pokehunter_api/issues"
+  },
+  "homepage": "https://github.com/JosueCuberoSanchez/pokehunter_api#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  }
+}
