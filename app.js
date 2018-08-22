@@ -3,8 +3,15 @@
 const express = require('express');
 const app = express();
 const apiRouter = require('./routes/index');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 
+// Middleware
+app.use(morgan('tiny'));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 app.use('/api/', apiRouter);
+
 module.exports = app;
 
 /*

@@ -24,4 +24,16 @@ async function getPokemons(req, res) {
     }
 }
 
-module.exports = { getPokemons };
+async function createPokemon(req, res) {
+    try {
+        console.log(req.body);
+        const pokemon = new Pokemon(req.body);
+        await pokemon.save();
+        respond(res, 201, { pokemon })
+    } catch (e) {
+        console.log('Error :', e);
+        next(e);
+    }
+}
+
+module.exports = { getPokemons, createPokemon };
