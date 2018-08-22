@@ -1,13 +1,12 @@
 const express = require('express');
-
 const apiRouter = express.Router();
 
-const pokemonsController = require('../controllers/pokemons/');
+const pokemonsController = require('../controllers/pokemonController');
 
-apiRouter.get('/pokemons', (req, res) => {
-    res.send('pokemons resource...');
+apiRouter.get('/', (req, res) => {
+    res.send('Hello trainer');
 });
 
-apiRouter.get('/pokemons', auth, pokemonsController.get);
+apiRouter.get('/pokemons', pokemonsController.getPokemons);
 
-module.export = apiRouter;
+module.exports = apiRouter;

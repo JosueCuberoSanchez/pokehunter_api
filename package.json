@@ -2,7 +2,7 @@
   "name": "pokehunter_api",
   "version": "1.0.0",
   "description": "Node JS API for Pokehunter app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon ./start.js"
   },
