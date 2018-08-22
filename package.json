@@ -4,7 +4,7 @@
   "description": "Node JS API for Pokehunter app",
   "main": "index.js",
   "scripts": {
-    "start": "node start"
+    "start": "nodemon ./start.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "mongoose": "^5.2.9"
+    "mongoose": "^5.2.9",
+    "slugs": "^0.1.3"
   }
 }

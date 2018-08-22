@@ -7,10 +7,11 @@ mongoose.connection.on('error', err => {
     console.log(err);
 });
 
+//import models
+const models = require('./models/Pokemon');
+
 const app = require('./index');
-
 app.set('port', process.env.PORT || 7777);
-
 const server = app.listen(app.get('port'), () => {
-    console.log(`listening on port ${server.address().port}`)
+    console.log(`Listening on port ${server.address().port}`)
 });
